@@ -1,0 +1,18 @@
+using System;
+class Fibonacci{
+    static void Main(){
+        List<int> Fibonacci = new List<int>();
+        int i=1;
+        int fibo=0;
+        Fibonacci.Add(0);
+        Fibonacci.Add(1);
+
+        Console.Write("Digite a quantidade de vezes a repetir a sequencia: ");
+         fibo = int.Parse(Console.ReadLine());
+        do{
+            Fibonacci.Add(Fibonacci[i]+Fibonacci[i-1]);
+            Console.WriteLine(Fibonacci[i]);
+            i++;
+        }while(i<=fibo);
+         }
+        }
